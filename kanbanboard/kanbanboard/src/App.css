@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 1.17;
+}
+
+.app {
+    background-color: #0079bf;
+    height: 100vh;
+    min-width: 100%;
+    display: grid;
+    grid-template-rows: 55px 1fr 55px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 1.18;
+
+    color: #ffffff;
+}
+
+@media (max-width: 650px) {
+    * {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    * {
+        font-size: 18px;
+    }
+    .app {
+        display: block;
+        min-height: 100vh;
+        height: auto;
+    }
+}
